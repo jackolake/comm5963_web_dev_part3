@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body>
+    <button style="width: 200px; height: 50px">0</button>
+
+    <script type="text/javascript">
+        function changeButton(event) {
+            event.target.innerText = Number(event.target.innerText) + 1
+        }
+        document.querySelector('button').addEventListener('click', changeButton)
+    </script>
+</body>
+</html>
