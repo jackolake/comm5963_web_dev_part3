@@ -1,12 +1,5 @@
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      x-bake:
-        platforms:
-          - linux/amd64
-          - linux/arm64
     image: jackolake/comm5963_practice10:latest
     ports:
-      - "80:80"
+      - "80:80"  # Specify passthrough of port 80
